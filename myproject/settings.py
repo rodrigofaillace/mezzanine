@@ -141,21 +141,32 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 #############
 
 DATABASES = {
-    "default": {
-        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.",
-        # DB name or path to database file if using sqlite3.
-        "NAME": "",
-        # Not used with sqlite3.
-        "USER": "",
-        # Not used with sqlite3.
-        "PASSWORD": "",
-        # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "",
-        # Set to empty string for default. Not used with sqlite3.
-        "PORT": "",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'mezzanine',  # Or path to database file if using sqlite3.
+        'USER': 'Alamparina2016',  # Not used with sqlite3.
+        'PASSWORD': 'virus.exe',  # Not used with sqlite3.
+        'HOST': 'alamparina.c6x8cdwuqdju.us-west-2.rds.amazonaws.com',
+    # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '3306',
     }
 }
+# DATABASES = {
+#     "default": {
+#         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+#         "ENGINE": "django.db.backends.",
+#         # DB name or path to database file if using sqlite3.
+#         "NAME": "",
+#         # Not used with sqlite3.
+#         "USER": "",
+#         # Not used with sqlite3.
+#         "PASSWORD": "",
+#         # Set to empty string for localhost. Not used with sqlite3.
+#         "HOST": "",
+#         # Set to empty string for default. Not used with sqlite3.
+#         "PORT": "",
+#     }
+# }
 
 
 #########
